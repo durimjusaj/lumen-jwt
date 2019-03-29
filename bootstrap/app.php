@@ -2,11 +2,9 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-try {
-    (new Dotenv\Dotenv(dirname(__DIR__)))->load();
-} catch (Dotenv\Exception\InvalidPathException $e) {
-    //
-}
+(new Laravel\Lumen\Bootstrap\LoadEnvironmentVariables(
+    dirname(__DIR__)
+))->bootstrap();
 
 /*
 |--------------------------------------------------------------------------
@@ -88,9 +86,6 @@ $app->register(Zeek\LumenDingoAdapter\Providers\LumenDingoAdapterServiceProvider
 
 // Lumen Generator
 $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
-
-// Form Request
-$app->register(Urameshibr\Providers\FormRequestServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

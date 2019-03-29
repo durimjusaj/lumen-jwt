@@ -4,11 +4,10 @@ If you want to Lumen + Dingo + JWT for your current application, please check [h
 
 ## What's Added
 
-- [Lumen 5.7](https://github.com/laravel/lumen/tree/v5.7.0).
+- [Lumen 5.8](https://github.com/laravel/lumen/tree/v5.8.0).
 - [JWT Auth](https://github.com/tymondesigns/jwt-auth) for Lumen Application. <sup>[1]</sup>
 - [Dingo](https://github.com/dingo/api) to easily and quickly build your own API. <sup>[1]</sup>
 - [Lumen Generator](https://github.com/flipboxstudio/lumen-generator) to make development even easier and faster.
-- [FormRequest](https://github.com/urameshibr/lumen-form-request) adaptation for Lumen framework.
 - [CORS and Preflight Request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) support.
 
 > [1] Added via [this package](https://packagist.org/packages/durimjusaj/lumen-dingo-adapter).
